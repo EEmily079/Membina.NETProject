@@ -1,0 +1,44 @@
+﻿@model List<MembinaSkincare.Models.Domain.Product>
+@{
+}
+
+
+<h1>View All Products</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Brand Name</th>
+            <th>Product Series Name</th>
+            <th>Product Name</th>
+            <th>Size</th>
+            <th>Product Description</th>
+            <th>SGDPrice</th>
+            <th>MMK Price</th>
+            <td></td>
+            <td></td>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Category</td>
+                <td>@product.BrandName</td>
+                <td>@product.ProductSeriesName</td>
+                <td>@product.ProductName</td>
+                <td>@product.Size</td>
+                <td>@product.ProductDescription</td>
+                <td>@product.SGDPrice</td>
+                <td>@product.MMKPrice</td>
+                <td><a href="Products/View/@product.Id">view</a></td>
+                <td><a href="Products/Update/@product.Id">update</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

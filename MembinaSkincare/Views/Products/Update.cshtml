@@ -1,0 +1,41 @@
+﻿@model MembinaSkincare.Models.UpdateProductViewModel
+
+<div class="container">
+    <h1>Update Product</h1>
+    <form asp-action="Update" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Category"></label>
+            <input asp-for="Category" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="BrandName"></label>
+            <input asp-for="BrandName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ProductSeriesName"></label>
+            <input asp-for="ProductSeriesName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ProductName"></label>
+            <input asp-for="ProductName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Size"></label>
+            <input asp-for="Size" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="ProductDescription"></label>
+            <textarea asp-for="ProductDescription" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label asp-for="SGDPrice"></label>
+            <input asp-for="SGDPrice" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="PhotoLink"></label>
+            <input asp-for="PhotoLink" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+</div>

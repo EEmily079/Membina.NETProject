@@ -1,0 +1,23 @@
+﻿@model MembinaSkincare.Models.AddProductViewModel
+@{
+}
+
+
+<div class="container">
+    <h1>@Model.ProductSeriesName</h1>
+    <div class="row">
+            <div class="col">
+                <img src="@Model.PhotoLink" width="300px">
+            </div>
+            <div class="col">
+                <h4>@Model.ProductName</h4>
+                <p>
+                    @Model.ProductDescription
+                </p>
+                <h4>@Model.Size: @Model.MMKPrice MMK</h4>
+                <a href="tel:+959785096113" class="btn">Call us to buy &#128222;</a>
+            </div>
+    </div>
+   
+</div>
+   
